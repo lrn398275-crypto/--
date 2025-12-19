@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="zh-Cn">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        ul span li {
+            color: aquamarine;
+        }
+
+        span>ol li {
+            color: brown;
+        }
+
+        ul>li {
+            font-size: 20px;
+        }
+
+        ul>span>li {
+            font-size: 25px;
+        }
+
+        .statment>li>ol {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <span>
+        <ol>
+            <li>《鸣潮》是一款开放世界动作游戏，</li>
+            <li> 主打高自由度的动作战斗玩法与丰富多样的开放世界探索。</li>
+        </ol>
+        <ul>
+            <li> 而你，在这个世界苏醒的漂泊者，</li>
+    </span>
+    <span>
+        <li> 将在找回记忆、寻找自我身份的同时结识无数的共鸣者同伴，</li>
+        <li>并和伙伴一起踏上跨越悲鸣的旅途。</li>
+    </span>
+    </ul>
+    <ul class="statment">选择器链接方式
+        <li> 紧贴 并集 </li>
+        <li>， 交集 </li>
+        <li> 空格 后代 </li>
+        <li> > 子代 </li>
+        <li>兄弟
+            <ol>都是往下查找前面不看 选中的是兄弟而不是第一个自己
+                <li>+ 兄弟(紧相邻且往下的一个) </li>
+                <li>~ 所有的兄弟 </li>
+
+            </ol>
+        </li>
+    </ul>
+    <ul>命名方式
+        <li>直接写 标签</li>
+        <li> 前加. class</li>
+        <li>前加# id</li>
+        <li>属性<ol>
+                <li>[**] 具有**属性</li>
+                <li>[**] 具有**属性</li>
+                <li>[**] 具有**属性</li>
+                <li>[**] 具有**属性</li>
+                <li>[**] 具有**属性</li>
+            </ol>
+        </li>
+    </ul>
+</body>
+
+</html>

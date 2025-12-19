@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="zh-Cn">
+
+<head>
+    <meta charset="UTF-8">
+    <title>自我</title>
+    <style>
+        .alink,
+        a {
+            color: aqua;
+            font-size: 25px;
+        }
+
+        h3 {
+            font-size: 15px;
+            color: bisque;
+        }
+
+        div,
+        #tupian,
+        p+span {
+            color: aquamarine;
+        }
+
+        ul>li,
+        ol>li,
+        dl {
+            color: cornflowerblue;
+        }
+
+        dl>dd {
+            color: darkviolet;
+        }
+
+        div[name="gender"] {
+            color: brown
+        }
+
+        a:link {
+            color: brown;
+        }
+
+        a:visited {
+            color: black;
+        }
+        a:hover{
+            color: skyblue;
+        }
+        h1:hover{color: green;}
+        h1:active{color: greenyellow;}
+        input:focus,select:focus{
+            color: blue;
+            background-color: cadetblue;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>我的个人网页</h1>
+    <hr>
+    <h3>如下所示</h3>
+
+    <a class="alink" href="#jianjie">我的简介</a>
+    <a class="alink" href="#tupian">我的图片</a>
+    <a class="alink" href="#lianxi">联系我</a>
+    <a class="alink" href="#jiesao">我的内容</a>
+
+    <div>
+
+        我的头像
+        <a name="jianjie"></a>
+        <image width="90" src="../图片/猫头像.jpg"></image>
+
+    </div>
+    <p id="tupian">
+
+        我喜欢的图片<br>
+        <a href="../day1/图片标签.html" target="_blank">
+            <image width="100" src="../图片/chuan.jpg"></image>
+        </a>
+    </p>
+    <span>我喜欢的图片集合<br>
+        <a href="../day1/图片标签.html#heji">合集</a></span>
+
+    <h3 id="jiesao"> 我的学习步骤</h3>
+    <ol>
+        <li>HTML</li>
+        <li>css</li>
+        <li>架构</li>
+    </ol>
+    <h3> 我喜欢的事</h3>
+    <ul>
+        <li>
+            <span>钢琴
+                <ol>
+                    <li>基础</li>
+                    <li>模仿</li>
+                    <li>演绎</li>
+                </ol>
+            </span>
+        </li>
+        <li>美食</li>
+        <li>电影</li>
+    </ul>
+    <h3> 我学习方法</h3>
+    <dl>
+        <dt>跟网课</dt>
+        <dd>给我提供思路</dd>
+        <dt>自己练习</dt>
+        <dd>内化自己的</dd>
+        <dt>以工作为目的</dt>
+        <dd>目的论</dd>
+        <dd>实用</dd>
+
+    </dl>
+
+    <hr>
+    <p id="hui">
+        <a href="#">回到顶部</a>
+        <a href="javascript:alert(666);">弹窗</a>
+    </p>
+    <p id="lianxi">
+        联系我
+        <a href="tel:17638621558">电话</a>
+        <a href="mailto:271865029@qq.com">邮件</a>
+        <a href="sms:17638621558">短信</a>
+    </p>
+    <form action="https://www.jd.com" target="_blank" weight="200">
+        <fieldset>
+            <legend>注册个人信息</legend>
+            <label><input type="text" name="account" value="zhangsan">账户</label><br>
+            <label><input type="password" name="psw">密码<br></label>
+            <label><input type="radio" name="gender" value="male" checked>男</label>
+            <label><input type="radio" name="gender" value="female">女</label>
+
+
+
+        </fieldset>
+        <fieldset>
+            <legend>附属信息收集</legend>
+
+            <label><input type="checkbox" name="hobby" value="1">钢琴</label>
+            <label><input type="checkbox" name="hobby" value="2">吉他</label>
+            <label><input type="checkbox" name="hobby" value="3">小提琴</label>
+            <label><input type="checkbox" name="hobby" value="4">唱歌<br></label>
+            籍贯<select name="place">
+                <option value="1">山东</option>
+                <option value="2">石川</option>
+                <option value="3">北京</option>
+                <option value="4">湖南</option>
+            </select>
+
+
+        </fieldset>
+        <input type="submit" value="提交">
+        <input type="reset" value="重置">
+        <input type="button" value="检测">
+    </form><br>
+
+</body>
+
+</html>

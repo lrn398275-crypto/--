@@ -1,0 +1,13 @@
+ctrl+/  注释掉
+shift alt f  格式
+!  html标准结构
+CTRL shift k 快速删除光标行
+浏览器内ctrl f  搜索
+ctrl 回车  不用鼠标点再回车
+shift alt 下/上   快速复制此行到下/上
+ctrl z 撤销上一步
+shift tab 前缩进    tab 后缩进
+光标可以点 alt多选  按上下左右移动
+win +v 调取剪切板
+ctrl shift delete 清楚浏览器缓存
+alt t 沙拉翻译

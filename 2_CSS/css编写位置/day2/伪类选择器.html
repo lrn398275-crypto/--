@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="zh-Cn">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        a:link {
+            color: brown;
+        }
+
+        a:visited {
+            color: black;
+        }
+
+        a:hover {
+            color: skyblue;
+        }
+
+        a:active {
+            color: green;
+        }
+
+        span>p:first-child {
+            color: antiquewhite;
+        }
+
+        span>p:last-child {
+            color: aqua;
+        }
+
+        span>p:nth-child(-n+5) {
+            color: blueviolet;
+        }
+
+        span>h3:nth-of-type(2) {
+            color: crimson;
+        }
+
+        span>p:nth-of-type(6) {
+            color: coral;
+        }
+        span>p:nth-last-child(2){
+            color: darkgreen;
+        }
+        span>p:nth-last-of-type(4){
+            color: cyan;
+        }
+        /* :root{background-color: darkkhaki;} */
+    </style>
+</head>
+
+<body>
+    <a href="https://www.baidu.com">去百度</a>
+    <a href="https://www.jd.com">去京东</a><br>
+    <span>
+        <p> 《寰宇人类注疏：威胁集录》——海维夏</p>
+        <p>深空联合为实时监测并维持炉芯的能量状态，</p>
+        <p>于坠剑湖地表修建了首座探测阵列——海维夏。</p>
+        <p>为提升监测精度，研究院在海维夏的核心中植入了隧者空间校算模块的副本。</p>
+        <p>该模块原用于修正隧者在宇宙航行中的轨迹</p>
+        <p>，并预测深空中的潜在灾害。</p>
+        <h3>得益于此，海维夏具备了预判炉芯运转状态的算力。</h3>
+        <h3>其主要职能，是在炉芯能流出现异常或临界波动时，</h3>
+        <p>执行紧急校准，并向炉芯反向传输数据，</p>
+        <p>以维持系统的稳定运行。</p>
+    </span>
+</body>
+
+</html>
