@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="zh-Cn">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        body {
+            text-align: center;
+        }
+
+        .leftfix {
+            float: left;
+        }
+
+        .cleanfix {
+            content: '';
+            display: block;
+            clear: both;
+        }
+
+        .logo,
+        .banner1,
+        .banner2 {
+            background-color: #ccc;
+            height: 80px;
+            line-height: 80px;
+        }
+
+        .logo,
+        .banner2 {
+            width: 200px;
+        }
+
+        .banner1 {
+            margin: 0 10px;
+            width: 540px;
+        }
+
+        .mnue {
+            background-color: #ccc;
+            line-height: 30px;
+            height: 30px;
+            width: 960px;
+            margin: 10px 0;
+        }
+
+
+        .itme1,
+        .itme2 {
+            width: 368px;
+            height: 198px;
+            border: 1px solid black;
+            line-height: 200px;
+            margin-right: 10px;
+        }
+
+        .item3,
+        .item4,
+        .item5,
+        .item6 {
+            width: 178px;
+            height: 198px;
+            border: 1px solid black;
+            line-height: 200px;
+            margin: 10px 10px 0 0;
+        }
+
+        .item7,
+        .item8,
+        .item9 {
+            width: 198px;
+            height: 128px;
+            border: 1px solid black;
+            line-height: 130px;
+        }
+
+        .item8 {
+            margin: 10px 0;
+        }
+
+        .foot {
+            width: 960px;
+            height: 60px;
+            line-height: 60px;
+            background-color: #ccc;
+            margin-top: 10px;
+        }
+    </style>
+
+</head>
+
+<body><div class="txt">
+    <!-- 头 -->
+    <div class="head clearfix">
+        <div class="logo leftfix">logo</div>
+        <div class="banner1 leftfix">banner1</div>
+        <div class="banner2 leftfix">banner2</div>
+        <div class="mnue leftfix">菜单</div>
+    </div>
+    <!-- 内容 -->
+    <div class="content cleanfix">
+        <div class="left leftfix">
+            <div class="top cleanfix">
+                <div class="itme1 leftfix">项目一</div>
+                <div class="itme2 leftfix">项目二</div>
+            </div>
+            <div class="bottom cleanfix">
+                <div class="item3 leftfix">项目三</div>
+                <div class="item4 leftfix">项目四</div>
+                <div class="item5 leftfix">项目五</div>
+                <div class="item6 leftfix">项目六</div>
+            </div>
+        </div>
+        <div class="right leftfix">
+            <div class="item7">项目七</div>
+            <div class="item8">项目八</div>
+            <div class="item9">项目九</div>
+        </div>
+    </div>
+    <!-- 脚 -->
+    <div class="foot leftfix">页脚</div>
+</div>
+</body>
+
+</html>
