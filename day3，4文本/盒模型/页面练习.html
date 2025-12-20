@@ -7,13 +7,15 @@
     <style>
         body {
             text-align: center;
+            margin: 0 auto;
+            width: 960px;
         }
 
         .leftfix {
             float: left;
         }
 
-        .cleanfix {
+        .cleanfix::after {
             content: '';
             display: block;
             clear: both;
@@ -90,37 +92,38 @@
 
 </head>
 
-<body><div class="txt">
-    <!-- 头 -->
-    <div class="head clearfix">
-        <div class="logo leftfix">logo</div>
-        <div class="banner1 leftfix">banner1</div>
-        <div class="banner2 leftfix">banner2</div>
-        <div class="mnue leftfix">菜单</div>
-    </div>
-    <!-- 内容 -->
-    <div class="content cleanfix">
-        <div class="left leftfix">
-            <div class="top cleanfix">
-                <div class="itme1 leftfix">项目一</div>
-                <div class="itme2 leftfix">项目二</div>
+<body>
+    <div class="txt">
+        <!-- 头 -->
+        <div class="head cleanfix">
+            <div class="logo leftfix">logo</div>
+            <div class="banner1 leftfix">banner1</div>
+            <div class="banner2 leftfix">banner2</div>
+            
+        </div>
+        <div class="mnue ">菜单</div>
+        <!-- 内容 -->
+        <div class="content cleanfix">
+            <div class="left leftfix">
+                <div class="top cleanfix">
+                    <div class="itme1 leftfix">项目一</div>
+                    <div class="itme2 leftfix">项目二</div>
+                </div>
+                <div class="bottom cleanfix">
+                    <div class="item3 leftfix">项目三</div>
+                    <div class="item4 leftfix">项目四</div>
+                    <div class="item5 leftfix">项目五</div>
+                    <div class="item6 leftfix">项目六</div>
+                </div>
             </div>
-            <div class="bottom cleanfix">
-                <div class="item3 leftfix">项目三</div>
-                <div class="item4 leftfix">项目四</div>
-                <div class="item5 leftfix">项目五</div>
-                <div class="item6 leftfix">项目六</div>
+            <div class="right leftfix">
+                <div class="item7">项目七</div>
+                <div class="item8">项目八</div>
+                <div class="item9">项目九</div>
             </div>
         </div>
-        <div class="right leftfix">
-            <div class="item7">项目七</div>
-            <div class="item8">项目八</div>
-            <div class="item9">项目九</div>
-        </div>
+        <div class="foot leftfix">页脚</div>
     </div>
-    <!-- 脚 -->
-    <div class="foot leftfix">页脚</div>
-</div>
 </body>
 
 </html>
