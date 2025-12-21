@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="zh-Cn">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <style>
+    .box1 {
+      /* 弹性盒子 */
+      display: flex;
+      /* 水平方向上的对齐方式 */
+      justify-content: space-between;
+      width: 400px;
+      height: 100px;
+      border: 1px solid #000;
+      /* 垂直居中 */
+      align-items: center;
+
+    }
+
+    .box2 {
+      /* 弹性盒子 */
+      display: flex;
+      flex-direction: column;
+    }
+
+    .item {
+      width: 50px;
+      height: 50px;
+      background-color: rgb(222, 65, 141);
+      color: azure;
+      font-size: 15px;
+      text-align: center;
+      /* 圆角 */
+      border-radius: 10px;
+      margin: 5px;
+
+    }
+  </style>
+</head>
+
+<body>
+
+</body>
+<div class="box1">
+  <div class="item">1</div>
+  <div class="item">2</div>
+  <div class="item">3</div>
+</div>
+<div class="box2">
+  <div class="item">1</div>
+  <div class="item">2</div>
+  <div class="item">3</div>
+</div>
+
+</html>

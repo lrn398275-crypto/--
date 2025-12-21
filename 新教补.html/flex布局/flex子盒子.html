@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="zh-Cn">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background-color: #b8b6b6;
+    }
+
+
+
+    .box {
+
+      background-color: rgb(16, 130, 120);
+      /* 剩余空间均分占1份 */
+      flex: 1;
+
+    }
+
+
+    .bigbox {
+      display: flex;
+
+      height: 200px;
+      border: 1px solid #000;
+      /* flex-direction: column; */
+      flex-wrap: wrap;
+      margin: 10px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="bigbox">
+
+
+    <div class="box">
+      1 </div>
+    <div class="box">
+      2 </div>
+    <div class="box">
+      3 </div>
+    <div class="box">
+      4 </div>
+    <div class="box">
+      5 </div>
+
+  </div>
+
+</body>
+
+</html>
