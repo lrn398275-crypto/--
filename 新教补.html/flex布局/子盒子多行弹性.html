@@ -9,7 +9,6 @@
     * {
       margin: 0;
       padding: 0;
-      box-sizing: border-box;
     }
 
 
@@ -20,15 +19,19 @@
       border: 1px solid #000;
       margin: 20px auto;
       display: flex;
-      /* flex-wrap: wrap; */
+      flex-wrap: wrap;
 
     }
 
     .bigbox .box {
-
+      /* flex: 0 0 16.666666%; */
+      flex: 1;
+      min-width: 16.666666%;
+      max-width: 16.666666%;
       background-color: rgb(16, 130, 120);
       height: 120px;
-      flex: 0 0 16.666666%;
+      margin: 0 8px 16px;
+      width: 80px;
 
     }
   </style>
