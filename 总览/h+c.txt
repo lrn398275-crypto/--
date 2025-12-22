@@ -1,0 +1,184 @@
+HTML / CSS 全知识点目录树（前端实习查漏用）
+
+====================
+一、HTML（结构与语义）
+====================
+
+1. HTML 基础
+   - 文档结构：<!DOCTYPE>、html、head、body
+   - meta：charset、viewport
+   - title
+
+2. HTML5 语义化标签
+   - header
+   - nav
+   - main
+   - section
+   - article
+   - aside
+   - footer
+
+3. 文本与内容标签
+   - h1-h6（标题层级）
+   - p
+   - span
+   - strong / em
+
+4. 列表
+   - ul / li
+   - ol / li
+
+5. 链接与媒体
+   - a（href、target）
+   - img（src、alt）
+
+6. 表单基础
+   - form
+   - input（text / password / checkbox / radio）
+   - textarea
+   - select / option
+   - label
+   - button
+   - name / value
+
+7. HTML SEO 基础
+   - 语义化结构
+   - 单一 h1
+   - title / meta description
+   - img alt
+   - 有意义的链接文本
+
+====================
+二、CSS 基础
+====================
+
+8. CSS 基础语法
+   - 选择器 + 声明块
+   - class / id
+
+9. 盒模型
+   - content / padding / border / margin
+   - box-sizing: content-box / border-box
+
+10. CSS 选择器
+    - 类选择器 .a
+    - id 选择器 #id
+    - 后代选择器 .a .b
+    - 子选择器 .a > .b
+    - 交集选择器 .a.b
+    - 相邻兄弟 .a + .b
+    - 并集 .a, .b
+    - 伪类 :hover :nth-child()
+
+11. CSS 优先级
+    - !important
+    - 行内样式
+    - id
+    - class
+    - 标签
+
+====================
+三、CSS 布局核心
+====================
+
+12. 文档流
+    - 块级元素
+    - 行内元素
+    - 行内块元素
+
+13. Flex 布局（一维布局）
+    - display: flex
+    - flex-direction
+    - justify-content
+    - align-items
+    - flex-wrap
+    - flex: grow shrink basis
+    - 主轴 / 交叉轴
+
+14. Grid 布局（二维布局）
+    - display: grid
+    - grid-template-columns
+    - repeat()
+    - fr
+    - auto-fill / auto-fit
+    - minmax()
+    - gap
+
+15. 定位布局
+    - position: static
+    - position: relative
+    - position: absolute
+    - position: fixed
+    - position: sticky
+    - 子绝父相
+
+16. 多列布局（了解）
+    - column-count
+    - column-gap
+    - column-width
+
+====================
+四、CSS 高级概念
+====================
+
+17. BFC（块级格式化上下文）
+    - 触发条件
+    - 作用：清除浮动 / 防止 margin 合并
+
+18. 层叠上下文
+    - position + z-index
+    - opacity
+    - transform
+    - 层级规则
+
+19. 尺寸与高度
+    - height: auto
+    - height: 100%
+    - min-height / max-height
+
+20. overflow
+    - hidden
+    - auto
+    - scroll
+
+====================
+五、响应式与现代 CSS
+====================
+
+21. 响应式设计思想
+    - 宽度自适应
+    - 不依赖设备
+
+22. 响应式实现方式
+    - Grid + minmax
+    - Flex + flex-wrap
+    - 媒体查询（了解）
+
+23. 现代 CSS 常用属性
+    - gap
+    - object-fit
+    - border-radius
+    - box-shadow
+
+24. 简单动画
+    - transition
+    - hover 动效
+
+====================
+六、工程习惯（前端实习加分）
+====================
+
+25. CSS 规范
+    - reset / normalize
+    - 不滥用 !important
+
+26. HTML / CSS 可维护性
+    - 语义优先
+    - 结构清晰
+    - 命名合理
+
+27. 常见反模式（避免）
+    - 全 div
+    - 过度 absolute
+    - 写死 px 不考虑响应式
+    - 旧式 float 布局

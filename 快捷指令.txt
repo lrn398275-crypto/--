@@ -11,3 +11,4 @@ shift tab 前缩进    tab 后缩进
 win +v 调取剪切板
 ctrl shift delete 清楚浏览器缓存
 alt t 沙拉翻译
+ctrl u 调ai
