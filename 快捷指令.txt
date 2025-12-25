@@ -12,3 +12,6 @@ win +v 调取剪切板
 ctrl shift delete 清楚浏览器缓存
 alt t 沙拉翻译
 ctrl u 调ai
+fn esc  锁定功能键
+f1 截图  f3 贴到屏幕上（snapaste）
+ctrl 1 放大  ctrl 2画图  ——按住ctrl是画矩形，按住tab是画圆（zoomlt）
