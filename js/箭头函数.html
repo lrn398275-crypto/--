@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="zh-Cn">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+    let ask = (question, yes, no) => {
+      if (confirm(question)) yes();
+      else no();
+      return;
+    }
+    //  yes 是函数  yes（）是执行函数
+    //我把() => alert('right')作为一个值传入到了yes中，调用时加入了（）所以就执行了
+    //外部定义行为，作为值传入到函数里面，函数体决定什么时候调用就加（）执行
+    ask('are you man?',
+      () => alert('right'), () => alert('no'))
+  </script>
+</body>
+
+</html>

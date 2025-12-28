@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="zh-Cn">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+    let arr1 = [2, 8, 1, 7, 4];
+
+    // let sum = 0;
+    // let eve = 0;
+    // sum = arrsum(arr)
+    // eve = arreve(arr)
+
+    // alert(sum)
+    // alert(eve)
+    // function arrsum(arr) {
+
+    //   for (i = 0; i < arr.length; i++) {
+    //     sum += arr[i];
+    //   }
+    //   return sum;
+    // }
+    // function arreve(arr) {
+    //   eve = sum / arr.length
+    //   return eve;
+    // }
+    let arr = [2, 28, 18, 9, 4];
+
+
+    let maxarr = (arr) => {
+      let max = arr[0];
+      for (let i = 0; i < arr.length; i++) {
+        // if (arr[i] > max) {
+        //   max = arr[i]
+        // }
+        arr[i] > max ? max = arr[i] : max;
+      }
+      return max
+    }
+
+
+    alert(maxarr(arr))
+  </script>
+</body>
+
+</html>
