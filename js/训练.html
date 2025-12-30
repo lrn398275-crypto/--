@@ -14,10 +14,53 @@
     // alert(admin);
     // let age = prompt("how old are you?", 18);
     // alert("ok you are " + age + "yeas ole")
-    let fnumber = +prompt("请输入第一个数",);
-    let cnumber = +prompt("请输入第二个数字",);
-    alert(`和为: ${fnumber + cnumber}`)
+    // let fnumber = +prompt("请输入第一个数",);
+    // let cnumber = +prompt("请输入第二个数字",);
+    // alert(`和为: ${fnumber + cnumber}`)
     // alert(fnumber + cnumber)
+
+    // function sum(num1, num2) {
+    //   return num1 + num2
+    // }
+    // let result = sum(8, 8)
+    // alert(result)
+
+    //弹出
+    // let btn = document.querySelector('button')
+    // btn.addEventListener('click', function () {
+    //   alert('hh')
+    // })
+
+    //换算时间
+    // let zmiao = +prompt('给我一个秒钟',)
+
+
+    // let getf = function (zmiao) {
+    //   let fen = zmiao / 60
+    //   return fen
+    // }
+    // let getm = function (zmiao) {
+    //   let miao = zmiao % 60
+    //   return miao
+    // }
+    // let fen = getf(zmiao)
+    // let miao = getm(zmiao)
+    // document.write(`现在是${fen}分${miao}秒`
+    // )
+    function transTime(scends) {
+      let fen = Math.floor(scends / 60)
+      let miao = scends % 60
+      let shi = 0
+      while (fen >= 60) {
+        fen -= 60
+        shi++
+      }
+
+      return `现在是${shi}时${fen}分${miao}秒`
+    }
+    let zmiao = +prompt('给我秒')
+    document.write(transTime(zmiao))
+
   </script>
 </body>
 
