@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="zh-Cn">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    table {
+      border: 1px solid black;
+      padding: 3px;
+      text-align: center;
+    }
+
+    td {
+      width: 100px;
+      height: 50px;
+    }
+
+    table tr:nth-child(1) {
+      background-color: #ddd;
+    }
+
+    table tr:not(:first-child):hover {
+      background-color: #eee;
+    }
+  </style>
+</head>
+
+<body>
+
+  <table>
+    <caption>学生信息</caption>
+    <tbody>
+      <tr>
+        <td>序号</td>
+        <td>姓名</td>
+        <td>年龄</td>
+        <td>性别</td>
+        <td>家乡</td>
+      </tr>
+      <script>
+        let student = [
+          { name: 'xm', age: '18', gender: 'male', hometown: 'hebei' },
+          { name: 'xw', age: '19', gender: 'female', hometown: 'henan' },
+          { name: 'xl', age: '15', gender: 'male', hometown: 'hexi' },
+          { name: 'xz', age: '16', gender: 'demale', hometown: 'hedong' },
+        ]
+
+        //渲染
+        for (let i = 0; i < student.length; i++) {
+          document.write(`
+        <tr>
+          <td>${i + 1}</td>
+          <td>${student[i].name}</td>
+          <td>${student[i].age}</td>
+          <td>${student[i].gender}</td>
+          <td>${student[i].hometown}</td>
+         
+          </tr>
+        `)
+        }
+      </script>
+    </tbody>
+    <tfoot></tfoot>
+  </table>
+  <!-- <script>
+    // let goods = {
+    //   name: ' zhenli',
+    //   num: '100012346014',
+    //   weight: '0.55kg',
+    //   address: 'zn',
+    //   // sayhi: function () {
+    //   //   document.write('hi')
+    //   // }
+
+    // }
+    // // 查
+    // goods.num
+    // // 改
+    // goods.name = 'zl'
+    // goods.hobby = 'piano'
+    // // 方法    delete goods.address
+    // // goods.sayhi()
+    // //遍历对象
+    // for (let k in goods) {
+
+    //   console.log(k)
+    //   console.log(goods[k])
+    // }
+    let student = [
+      { name: 'xm', age: '18', gender: 'male', hometown: 'hebei' },
+      { name: 'xw', age: '19', gender: 'female', hometown: 'henan' },
+      { name: 'xl', age: '15', gender: 'male', hometown: 'hexi' },
+      { name: 'xz', age: '16', gender: 'demale', hometown: 'hedong' },
+    ]
+    // for (let i = 0; i < student.length; i++) {
+    //   console.log(i)
+    //   // console.log(student[i])
+    //   // console.log(student[i].name)
+    //   console.log(student[i].age)
+    // }
+    console.log(student[2])
+    console.log(student[2].age)
+
+  </script> -->
+</body>
+
+</html>

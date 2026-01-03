@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="zh-Cn">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    div {
+      display: block;
+      width: 100px;
+      height: 100px;
+      text-align: center;
+      line-height: 100px;
+      margin: 0 auto;
+      /* background-color: rgb(118, 182, 38); */
+
+
+    }
+  </style>
+</head>
+
+<body>
+  <div>color</div>
+  <script>
+    //选择
+    let randomcolor16 = ['1', '2', '3', '4', '5', '6', '7', '8', '9', '0', 'a', 'b', 'c', 'd', 'e', 'f']
+    let color16 = []
+
+    let flag = prompt('选择类型')
+    if (flag) {
+      alert(getRandomColor16())
+    } else {
+      alert(
+        getRandomColorrgb())
+    }
+    //16
+    function getRandomColor16() {
+      for (let i = 0; i < 6; i++) {
+        let rnum16 = Math.floor(Math.random() * randomcolor16.length)
+        color16.push(randomcolor16[rnum16])
+      }
+      let str16 = color16.join('')
+      return str16
+    }
+
+    //rgb
+    function getRandomColorrgb() {
+      let colorrgb = []
+      for (let i = 0; i < 3; i++) {
+        let rgbcolor = Math.floor(Math.random() * 256)
+        colorrgb.push(rgbcolor)
+      }
+      return colorrgb
+    }
+    //dom
+    const nav = document.querySelector('div')
+    nav.style.backgroundColor = `#${str16}`
+  </script>
+</body>
+
+</html>

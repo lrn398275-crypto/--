@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="zh-Cn">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+</body>
+<script>
+  // 内置函数
+  Math.ceil(1.1)//2 
+  Math.floor(1.1)//1
+  parseInt('12px')//12
+  Math.round(1.5)//2   四舍五入后最接近的整数
+  Math.max(1, 2, 3, 4, 5)
+  Math.min(1, 2, 3, 4, 5)
+  Math.abs(-5)//5
+  //随机数 0-1 左闭右开
+  console.log(Math.random())
+  //0-10
+  console.log(Math.floor(Math.random() * 11))
+  let arr = ['a', 'b', 'c', 'd', 'r', 'f', 'g']
+  // console.log(arr[Math.floor(Math.random() * arr.length)])
+  //抽到后删掉
+  while (arr.length > 0) {
+    let i = Math.floor(Math.random() * arr.length)
+    console.log(arr[i])
+    arr.splice(i, 1)//(起始位置，删除几个)
+    break
+  }
+
+
+  //5-10
+  (Math.random() * 6) + 5
+    //N-M
+    (Math.random() * (M - N + 1) + N)
+</script>
+
+</html>
