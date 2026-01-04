@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="zh-Cn">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <button class="btn" disabled>倒计时5</button>
+  <script>
+    // setInterval(function () {
+    //   document.write('hi')
+    // }, 1000)
+    const btn = document.querySelector('button')
+    let i = 5
+    let djs = setInterval(function () {
+      i--
+      btn.innerHTML = `倒计时${i}`
+      if (i === 0) {
+        clearInterval(djs)
+        btn.disabled = false
+        btn.innerHTML = '继续'
+      }
+    }
+      , 1000)
+
+  </script>
+</body>
+
+</html>

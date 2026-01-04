@@ -8,7 +8,7 @@
 </head>
 
 <body>
-  <div class="box">
+  <!-- <div class="box">
     <span>hi</span>
   </div>
   <ul>
@@ -27,6 +27,50 @@
     }
     box.innerHTML = '<h1>hello</h1>'
     // box.innerText = '你好'
+  </script> -->
+  <div class="wrapper">
+    <strong>抽奖</strong>
+    <h1>一等<span id="one">a</span></h1>
+    <h2>二等<span id="two">b</span>
+    </h2>
+    <h3>三等<span id="three">c</span>
+    </h3>
+  </div>
+  <script>
+    const personArr = ['wang', 'zhang', 'li', 'wei', 'sun']
+
+    // const yi = Math.floor(Math.random() * 6)
+    // console.log(personArr[yi])
+    // const yd = document.querySelector('h1')
+    // yd.innerText = `${personArr[yi]}`
+    // const er = Math.floor(Math.random() * 5)
+    // console.log(personArr[er])
+    // const ed = document.querySelector('h2')
+    // ed.innerText = `${personArr[er]}`
+    // const sa = Math.floor(Math.random() * 4)
+    // console.log(personArr[sa])
+    // const sd = document.querySelector('h3')
+    // sd.innerText = `${personArr[sa]}`
+    const random = Math.floor(Math.random() * personArr.length)
+    const one = document.querySelector('h1')
+    one.innerText = personArr[random]
+    //删除
+    personArr.splice(random, 1)
+    // console.log(personArr)
+
+    const random2 = Math.floor(Math.random() * personArr.length)
+    const two = document.querySelector('h2')
+    two.innerText = personArr[random2]
+    //删除
+    personArr.splice(random2, 1)
+    // console.log(personArr)
+
+    const random3 = Math.floor(Math.random() * personArr.length)
+    const three = document.querySelector('h3')
+    three.innerText = personArr[random3]
+    //删除
+    personArr.splice(random3, 1)
+    console.log(personArr)
   </script>
 </body>
 

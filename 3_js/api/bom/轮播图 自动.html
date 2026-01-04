@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="zh-Cn">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    .box {
+      width: 450px;
+      height: 250px;
+      border: 1px solid black;
+      /* padding: 0 10px; */
+      background-color: rgb(192, 216, 208);
+    }
+
+    ul {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    li {
+      display: block;
+      width: 10px;
+      height: 10px;
+      background-color: rgb(188, 195, 201);
+      border-radius: 10px;
+    }
+
+    img {
+      width: 450px;
+      height: 200px;
+    }
+
+    .active {
+      background-color: rgb(248, 250, 252);
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+    }
+  </style>
+
+</head>
+
+<body>
+  <div class="box">
+    <img src="../图片练习/zs03.jpg" alt="">
+    <h3 class="title"></h3>
+    <ul>
+      <li class="active"></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+    </ul>
+  </div>
+  <script>
+    function getRandom(N, M) {
+      return Math.floor(Math.random() * (M - N + 1) + N)
+
+    }
+    // //随机数字决定图片和圆点
+    // const radom = getRandom(1, 5)
+    // // console.log(radom)
+
+    // //图片实现
+    // const activeimg = document.querySelector('img')
+    // activeimg.src = `../图片练习/zs0${radom}.jpg`
+    // //小圆点高亮
+    // const activeli = document.querySelector(`ul li:nth-child(${radom})`)
+    // activeli.classList.add('active')
+    // //文字
+    let i = 1
+
+    setInterval(function () {
+      //获取图片
+      const activeimg = document.querySelector('img')
+      activeimg.src = `../图片练习/zs0${i}.jpg`
+
+      //获取删掉的
+      const lastli = document.querySelector('ul .active')
+      //删掉之前的
+      lastli.classList.remove('active')
+      //li添加
+      const activeli = document.querySelector(`ul li:nth-child(${i})`)
+      activeli.classList.add('active')
+
+      //文字
+      const text = document.querySelector('h3')
+      text.innerHTML = `第${i}张`
+
+      i++
+      if (i > 5) { i = 1 }
+    }, 1000)
+
+
+  </script>
+</body>
+
+</html>

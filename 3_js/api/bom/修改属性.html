@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="zh-Cn">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    img {
+      width: 700px;
+    }
+
+    .box {
+      background-color: aquamarine;
+      width: 250px;
+      height: 250px;
+    }
+
+    div {
+      height: 200px;
+      width: 200px;
+      background-color: aqua;
+      margin: 30px;
+    }
+  </style>
+</head>
+
+<body>
+  <img src="../../../图片/chuan.jpg" alt="">
+  <div>hi</div>
+  <div class="two">hi</div>
+  <div class="three">hi</div>
+  <script>
+    const img = document.querySelector('img')
+    const box = document.querySelector('.three')
+
+    img.src = '../../../图片/fll.png'
+    img.title = 'fll'
+    img.style.width = '1000px'
+    //添加类名
+    // box.className = "box"
+    //
+    box.classList.add('box')
+  </script>
+</body>
+
+</html>
