@@ -1,0 +1,50 @@
+/* ========== CSS Reset / Base ========== */
+
+/* 清除默认内外边距 */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* 基础字体 */
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI",
+    "PingFang SC", "Microsoft YaHei", Arial, sans-serif;
+  font-size: 14px;
+  color: #333;
+}
+
+/* 去掉列表样式 */
+ul,
+ol {
+  list-style: none;
+}
+
+/* a 标签 */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* 图片 */
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* 表单元素 */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+  outline: none;
+  border: none;
+}
+
+/* 清除 button 默认样式 */
+button {
+  background: none;
+  cursor: pointer;
+}

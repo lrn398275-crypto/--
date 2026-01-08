@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="zh-Cn">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .main {
+      width: 500px;
+      height: 300px;
+      background-color: rgb(205, 216, 226);
+
+    }
+
+    .title {
+      text-align: center;
+
+    }
+
+    .button {
+      display: flex;
+    }
+
+    .question {
+      line-height: 150px;
+    }
+
+    .star,
+    .end {
+      width: 50px;
+      height: 25px;
+      border: 1px solid black;
+      background-color: aquamarine;
+      /* margin: 200px auto; */
+
+
+    }
+  </style>
+</head>
+
+<body>
+  <div class="main">
+    <div class="title">随机问答</div>
+    <div class="question">
+      问题是：<span>hi
+
+      </span>
+    </div>
+    <div class="button">
+      <button class="star">开始</button>
+      <button class="end">结束</button>
+    </div>
+  </div>
+  <script>
+    const questionArr = ['hi', 'hello', 'bey', 'but']
+    const span = document.querySelector('span')
+    let timeId = 0
+    let random = 0
+    //开始按钮
+    const star = document.querySelector('.star')
+    star.addEventListener('click', function () {
+      timeId = setInterval(function () {
+        //随机显示 // console.log(1)
+        random = parseInt(Math.random() * questionArr.length)
+        span.innerHTML = `${questionArr[random]}`
+      }, 34)
+      if (questionArr.length === 1) {
+        // star.disabled = true
+        // end.disabled = true
+        star.disabled = end.disabled = true
+      }
+    })
+
+    //结束按钮
+    const end = document.querySelector('.end')
+    end.addEventListener('click', function () {
+      clearInterval(timeId)
+      //删除
+      questionArr.splice(random, 1)
+    })
+  </script>
+</body>
+
+</html>

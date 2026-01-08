@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="zh-Cn">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    ul {
+      list-style: none;
+      position: absolute;
+      top: 20px;
+      display: none;
+      color: #ff6700;
+    }
+
+    .box {
+      display: flex;
+      position: relative;
+      margin: 50px 200px;
+    }
+
+    .text {
+      border: 1px solid #ff6700;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    input,
+    button,
+    textarea,
+    select {
+      font: inherit;
+      outline: none;
+      border: none;
+    }
+
+    input {
+      border: 1px solid black
+    }
+  </style>
+</head>
+
+<body>
+  <div class="box">
+    <input type="text">
+    <ul class="result-list">
+      <li><a href="#">adwe</a></li>
+      <li><a href="#">adasd</a></li>
+      <li><a href="#">adsda</a></li>
+      <li><a href="#">aasda</a></li>
+      <li><a href="#">adqed</a></li>
+      <li><a href="#">adwe</a></li>
+      <li><a href="#">fwefwa</a></li>
+    </ul>
+  </div>
+  <script>
+    const input = document.querySelector('input')
+    const ul = document.querySelector('ul')
+
+    //获取
+    input.addEventListener('focus', function () {
+      ul.style.display = 'block'
+      input.classList.add('text')
+    })
+    //失去
+    input.addEventListener('blur', function () {
+      ul.style.display = 'none'
+      input.classList.remove('text')
+    })
+  </script>
+</body>
+
+</html>

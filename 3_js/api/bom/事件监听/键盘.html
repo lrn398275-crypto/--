@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="zh-Cn">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    input,
+    button,
+    textarea,
+    select {
+      font: inherit;
+      outline: none;
+      border: none;
+    }
+
+    textarea {
+      width: 200px;
+      height: 20px;
+      transition: all .3s;
+      border: 1px solid rgb(39, 38, 38);
+    }
+
+    textarea:focus {
+      width: 300px;
+      height: 30px;
+
+    }
+
+    .total {
+      display: none;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="wrapper">
+    <i class="avatar"></i>
+    <textarea name="" id="tx" cols="30" rows="2"></textarea>
+    <button>发布</button>
+  </div>
+  <div class="wrapper">
+    <span class="total">0/20字</span>
+  </div>
+
+  <script>
+    const textarea = document.querySelector('textarea')
+    const total = document.querySelector('.total')
+    textarea.addEventListener('focus', function () {
+      total.style.display = 'block'
+    })
+    textarea.addEventListener('blur', function () {
+      total.style.display = 'none'
+    })
+    // input.addEventListener('keyup', function () {
+
+    // })
+    textarea.addEventListener('input', function () {
+      tlength = textarea.value.length
+      total.innerHTML = `${tlength}/20字`
+      // if (tlength > 20) {
+      //   textarea.style.display = 'none'
+      // }
+    })
+
+
+
+  </script>
+</body>
+
+</html>

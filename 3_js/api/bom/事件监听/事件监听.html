@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="zh-Cn">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .box1 {
+      position: absolute;
+      right: 10px;
+      top: 40px;
+      width: 20px;
+      height: 20px;
+
+    }
+
+    .box {
+      position: relative;
+      width: 700px;
+      height: 400px;
+      margin: 100px auto;
+      background-color: aqua;
+      text-align: center;
+      line-height: 400px;
+      display: block;
+    }
+  </style>
+</head>
+
+<body>
+
+
+  <div class="box">
+    ggg
+    <div class="box1">
+      点击
+    </div>
+  </div>
+
+  <script>
+    const btn = document.querySelector('.box1')
+    const box = document.querySelector('.box')
+    btn.addEventListener('click', function () {
+      // alert('hi')
+      // box.classList.remove('box')
+      // box.innerHTML = ' '
+      box.style.display = 'none'
+    })
+  </script>
+</body>
+
+</html>
