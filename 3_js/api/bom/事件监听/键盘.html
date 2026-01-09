@@ -59,6 +59,11 @@
     textarea.addEventListener('input', function () {
       tlength = textarea.value.length
       total.innerHTML = `${tlength}/20字`
+      textarea.addEventListener('keyup', function (e) {
+        if (e.key === 'Enter') {
+          console.log(textarea.value)
+        }
+      })
       // if (tlength > 20) {
       //   textarea.style.display = 'none'
       // }
