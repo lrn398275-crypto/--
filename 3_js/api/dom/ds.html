@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="zh-Cn">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    div {
+      width: 200px;
+      height: 200px;
+      background-color: aqua;
+    }
+
+    span {
+      padding: 10px;
+    }
+  </style>
+</head>
+
+<body>
+  <div>
+    <a href="https://chatgpt.com/">自动跳转 剩余时间<span>5</span>s</a>
+  </div>
+
+  <script>
+    // const div = document.querySelector('div')
+    // setTimeout(() => {
+    //   div.style.display = 'none'
+    // }, 3000);
+
+
+    const span = document.querySelector('span')
+    const a = document.querySelector('a')
+
+    let num = 5
+    timeId = setInterval(function () {
+      num--
+      // a.innerHTML = `自动跳转 剩余时间<span>${num}</span>s`
+      span.innerHTML = `<span>${num}</span>`
+      if (num === 0) {
+        clearInterval(timeId)
+        location.href = 'https://chatgpt.com/'
+      }
+    }, 1000)
+
+  </script>
+</body>
+
+</html>
